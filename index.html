@@ -1,0 +1,17 @@
+<script src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.4/socket.io.min.js'></script>
+<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+
+<script>
+     // var socket = io.connect('http://raspberrypi.neverskip.com:31339');
+    var socket =io.connect('https://43.205.191.213:31335');
+    console.log(socket);
+    
+    var msg = '{"emitKey":"dev280","emitValue":{"action":"start","act_val":{}}}';
+    
+    console.log(msg);
+
+    // socket.emit('broadcast', msg);
+
+    socket.emit('mesygy', msg);
+
+</script>
